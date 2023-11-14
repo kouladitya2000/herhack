@@ -1,0 +1,222 @@
+prompt,response
+Can I get access to the any service/tool/repository/project/database?,"To get access, please submit a request through the access management system. Your request will be processed within 24 hours. For further information, please visit this link : https://drive.google.com/file/d/1K1VBdej3R15HxK7xq3QZ3jQYhZx1tlbh/view?usp=drive_link"
+Are there any updates from the team or management that I should be aware of?,Any critical updates will be communicated in the regular meeting. Check the meeting notes here for more details. https://drive.google.com/file/d/1K1VBdej3R15HxK7xq3QZ3jQYhZx1tlbh/view?usp=drive_link
+ How can I contribute to the recognition of team members for their efforts?,We have a recognition channel on Slack. Feel free to give a shoutout to your team members there. More information can be found here. https://drive.google.com/file/d/1K1VBdej3R15HxK7xq3QZ3jQYhZx1tlbh/view?usp=drive_link
+ Is there a feedback mechanism for improving team collaboration?, Use the feedback form on the company portal to provide constructive feedback on team collaboration and suggest improvements. The form can be accessed here. https://drive.google.com/file/d/1K1VBdej3R15HxK7xq3QZ3jQYhZx1tlbh/view?usp=drive_link
+Where can I find project documentation and design specifications?,The project documentation is stored in the shared Google Drive folder. Access it here for detailed information. https://drive.google.com/file/d/1K1VBdej3R15HxK7xq3QZ3jQYhZx1tlbh/view?usp=drive_link
+How to apply for leaves?,Please access GMIS portal for leave management. Here is the link: https://drive.google.com/file/d/1K1VBdej3R15HxK7xq3QZ3jQYhZx1tlbh/view?usp=drive_link
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+How can I use PowerBI on my Mac system?,"Hi
+
+You can use VirtualBox to create a virtual machine and install Windows on it. This will allow you to run Power BI and Excel on your Mac.
+
+If you're not familiar with setting up a virtual machine, there are many resources available on YouTube that can guide you through the process. Simply search for ""installing virtual machines"" and you'll find plenty of helpful videos.
+
+Best of luck with your studies!"
+"In sales analytics chapter , when creating pivot table a blank column is getting added. How to solve this?","Hi, please check these instructions.
+
+Option - 1:
+If you are from India, you can change your system default date format to India, then restart your computer once. and see, whether it fixed your issue or not. Else you can follow the second option.
+
+Option - 2:
+
+1. Reason for the Issue:
+In the dim_date table, the date is in dd/mm/yyyy format. Whereas the fact table is in mm/dd/yyyy format. Because of the different formats, causing the issue. Power BI/Excel will likely use your system's default date format whenever you open any file. This could cause the date format issue - dd/mm/yyyy --- mm/dd/yyyy. Please look for this whenever you face issues with values mismatch.
+
+2. Steps to resolve:
+    1. Change the data type of the date column to ‘Date’ if it is in ‘Date/Time’ format. Skip this step if it is already in ‘Date’ format.
+    2. Create a new custom column in the fact_sales_monthly table. you can name it date_modified or any other name accordingly.
+    Formula
+    = Date.ToText([date],""yyyy"") & ""/"" & Text.PadStart(Text.From(Date.Day([date])),2,""0"") & ""/"" & Text.PadStart(Text.From(Date.Month([date])),2,""0"")
+    3. change the data type of the above-created column to date.
+    4. In Power Pivot, Go to the 'Manage' tab and select the 'Diagram' view. Map the date column in the 'dim_date' table with the newly created column in the 'fact_sales_monthly' table. Make sure to delete the previous relationship (date from fact_sales_month)."
+"why row and value option is not showing for the visual in PowerBI , any setting need to be change, please let me know?",You have selected Table Visual instead of Matrix. That is why you are seeing a different interface.
+"Hello, I have a issue to calculate WHF%. Can you give me numbers for checklist and debbuging?","Hello 
+
+Please confirm whether you got these values right!
+
+Before Data Cleaning Stats:
+Number of rows: 6336
+Number of distinct employees: 198
+Number of distinct employee_id: 106
+
+After Data Cleaning Stats:
+Number of rows: 6208
+Number of distinct employees: 99
+Number of distinct employee_id: 74
+
+If these values are not matching, I highly suggest doing the data-cleaning steps correctly (mainly removing duplicates)"
+How do become good and comfortable with SQL?,"To master SQL, we need to practice it every day and keep in touch with it all the time.
+
+---
+Here are some references where you can practice daily. First start with easy problems, then medium, and finally hard questions. Don't directly jump into Hard questions.
+- Hacker rank: https://www.hackerrank.com/domains/sql
+- Leetcode: https://leetcode.com/problemset/database/
+- Datalemur: https://datalemur.com/
+---
+
+I have created a LinkedIn post attaching some youtube resources which discussed interview-related problems and help to solve interesting questions. check out this too.
+Link:  https://www.linkedin.com/posts/kirandeepmarala_sql-careers-data-activity-7012258071334854656-jRgf?utm_source=share&utm_medium=member_desktop
+---
+
+Also, I highly recommend participating in the Codebasics SQL challenge, which has been conducted in the past, as it can help you brush up on your skills and provide an opportunity to test your knowledge further
+Link:  https://codebasics.io/challenge/codebasics-resume-project-challenge  (Challenge #4)"
+Why SUM() function not working in my Excel?,"Because of having  #N/A values, the SUM() function is not working as expected.
+
+so we need to handle this case by filling the #N/A(not available) with 0.
+
+Thread for further explanation: https://discord.com/channels/1090613684163850280/1107909641989525524/1107926537988227073"
+What is the difference between Business Analyst Vs Data Analyst,"While both business analysts and data analysts work with data, they have different focuses and responsibilities. Here are some key distinctions:
+
+1. Focus: Business analysts focus on the business side of things, such as business processes, workflows, and strategies. They use data analysis to identify business problems, opportunities, and solutions. Data analysts, on the other hand, focus on the data itself. They collect, process, and analyze data to extract insights and make data-driven decisions.
+2. Skill set: Business analysts need to have strong communication, problem-solving, and strategic thinking skills, as they often work closely with stakeholders and decision-makers to identify business needs and develop solutions. They also need to have some knowledge of data analysis, such as data visualization and basic statistical analysis. Data analysts, on the other hand, need to have a strong foundation in data analysis and programming skills, such as SQL, Python, etc. They also need to have a good understanding of data visualization and statistical analysis to derive insights from the data.
+3. Tools: Business analysts typically use tools like spreadsheets, business process modeling software, and business intelligence (BI) tools to analyze data and create reports. Data analysts use more advanced tools like statistical software, programming languages, and database management systems to collect, process, and analyze data.
+4. Outputs: Business analysts typically produce reports, presentations, and recommendations based on their analysis of the data. Data analysts produce statistical models, visualizations, and reports to help stakeholders understand the data and make informed decisions.
+
+I recommend watching this video by Dhaval sir which explained more details: https://www.youtube.com/watch?v=7sFRpbPKTG4&t=1s"
+"Can you state the distinction among the SAMEPERIODLASTYEAR(), PARALLELPERIOD(), and DATEADD() function in Power BI?","
+Here is the brief explanation.
+
+SAMEPERIODLASTYEAR() compares the given period with the exact same period of last year as the name suggests. But it has a limitation like King of the chess board - it can go only compare 1 year backward for a given day, month, week, or quarter. If you want to go backward or forward or if you need to go 3 or 6 months/years/days you need to use DATEADD().
+
+DATEADD() is more like the queen of the chessboard. It is very dynamic as it compares a day, month, quarter, year, etc. over any specified no. of time period.
+
+PARALLELPERIOD() works exactly like DATEADD() but there is a minor difference. Parallelperiod() does not work dynamically like DATEADD().
+
+For example, if you use PARALLELPERIOD() to get the previous month's value for dates between 1/5/2023 - 12/5/2023..it will compare these 12 days with the entire previous month of April 2023 (1/4/2023 - 30/4/2023) whereas DATEADD will compare the exact same days (1/4/2023- 12/4/2023).
+
+Likewise, if you use PARALLELPERIOD() to get the previous year's value for dates between 1/1/2023 - 12/5/2023..it will compare this time period with the entire previous year 2022 (1/1/2022 - 31/12/2022) whereas DATEADD will compare the exact same period (1/1/2022- 12/5/2022).
+
+Refer this thread for more info: https://discord.com/channels/1090613684163850280/1106528524023648326
+"
+My Excel Excel VLookup() showing formula instead of result,"Solution1:
+
+Please check the cell type, if it is 'text', change that to 'general', and once hit enter execute the formula.
+
+Solution2:
+
+The primary reason for this issue is the accidental enabling of the 'show formulas' mode.
+ To gain more clarity and resolve the problem, please refer to the following resource: https://exceljet.net/articles/excel-shows-formula-not-result"
+I have a doubt regarding Vlookup() giving zero values in Exercise-3.,check this demo video to fix the issue: https://drive.google.com/file/d/1gp0krl2wMN0YhZYja3IKmt59SBsUK7xB/view?usp=share_link
+"i am unable to import data from mysql in power bi ,connector issue is coming continuously i have done all steps according to connector pdf still its not resolving please guide",Please refer to this thread: https://discord.com/channels/1090613684163850280/1107992760105054238/1107993007606730802
+Do data analysts need to learn database design?,"As a data analyst, it is not typically expected that you would be responsible for creating a database from scratch. However, you may be involved in designing the structure and schema of a database, as well as configuring and populating it with data.
+
+Creating a database usually falls under the purview of a database administrator (DBA) or a data engineer. These roles are focused on the technical aspects of database design, implementation, and maintenance.
+
+As a data analyst, your primary responsibilities would typically include querying and analyzing data within an existing database, creating reports and visualizations to communicate insights, and helping to inform business decisions based on data analysis. However, depending on the organization and the specific role, there may be some overlap or variation in responsibilities."
+Can you explain me more about the foreign key?,"A foreign key is a column or set of columns in a table that refers to the primary key of another table. It is used to establish a relationship between two tables in a relational database. The primary key of one table is used as a foreign key in another table to link the data between the tables.
+
+For example, let's say we have two tables in a database: a ""customers"" table and an ""orders"" table. The customer's table has a primary key column called ""customer_id"", and the orders table has a foreign key column called ""customer_id"" that references the ""customer_id"" column in the customer's table.
+
+By establishing this relationship between the two tables, we can ensure that every order in the orders table is associated with a valid customer in the customer's table."
+"I'm experiencing an issue where the target value appears the same in every row, and it is incorrect. Can you please help me understand why this is happening?","That is happening because you are pulling ""market"" from wrong table
+Pull ""Market"" From dim_market
+
+Check out this thread : https://discord.com/channels/1090613684163850280/1108671672434839562/1108672494958817301"
+"Hello Everyone, I am using 2016 excel. So far, I have noticed there are few functions which are not available in 2016 Excel like xlookup, unique etc. is there any option 
+available other than buying new updated version ?","Here are some add-in links. Please go through the videos , you will be able to use those functions in your Excel version. 
+
+? UNIQUE function:
+?? https://youtu.be/wiCH-YTacKU
+
+?XLOOKUP function: 
+?? https://www.youtube.com/watch?v=NWZaM7ZbE3Q
+or,
+?? https://www.youtube.com/watch?v=e60-J_u-K7o
+
+?? https://www.youtube.com/watch?v=TUTMfhCS62M"
+Can someone help me to create same chart exactly like this. I have created more than half of it. I want to add quadrant labels. Low medium high on x & y axis,Check this thread for instructions : https://discord.com/channels/1090613684163850280/1107745807848980490/1107746891418058762
+whenever I am loading fact_sales_monthly table in Power query not all columns are visible,"Have you taken SQL course in Codebasics first ?
+If yes, delete the existing databases in MySQL workbench and re-import again. After this go to 'Home' tab in Power Query and click on Refresh button and see if it works any.
+
+Check this reference too: https://discordapp.com/channels/1090613684163850280/1111180401478746163/1111190746507251732
+"
+The fact_sales_monthly table seems to be missing. Could you please provide information about why it is not available?,Delete the existing databases in MySQL workbench and re-import again. After this go to 'Home' tab in Power Query and click on Refresh button and see if it works any.
+"I am getting this error in PowerBI, 
+
+""there are pending changes in your queries that have havent been applied""
+
+Any suggestions to solve it?","To resolve the annoying message, follow these steps:
+1. Access Power Query by selecting 'Transform Data.'
+2. Click on 'Refresh Preview' and then choose 'Refresh All' to run a refresh on the tables.
+3. After completing the refresh, select 'Close & Apply' to save the changes.
+By following these steps, the annoying message should disappear.
+
+Check this reference for further details: https://community.fabric.microsoft.com/t5/Desktop/quot-There-are-pending-changes-in-your-queries-that-haven-t-been/td-p/1142424
+Hope this helps!"
+"I am encountering an error with the pre-invoice discount where I am receiving ""0"" values. Could you assist me in resolving this issue?","To troubleshoot the issue, please consider the following steps:
+
+1. Verify your data modeling by accessing ""Manage Relationships.""
+2. Review the measures you have created for any potential errors or inconsistencies.
+3. Ensure that the column format is set correctly as the ""Fixed Decimal Number"" type.
+By examining these aspects, you can address the pre-invoice discount error and resolve the issue.
+
+Check this reference for further details: https://discordapp.com/channels/1090613684163850280/1106513101693669466/1106516289905766433
+"
+The year column is missing in the P&L check. How can I resolve this issue and obtain the year column?,"Check this reference:
+ https://discord.com/channels/1090613684163850280/1111101322406658098/1111137901816848494"
+There are missing values in the P&L check. How can I address this issue and handle the missing values appropriately?,"Check this reference:
+https://discordapp.com/channels/1090613684163850280/1108980495477395486/1109016973662240848"
+How can I rearrange the column order in the P&L check? I would like to change the order of the columns.,"Check this reference:
+https://discord.com/channels/1090613684163850280/1112342820930453516/1112399292792062022"
+Why is the year 2018 missing or disappeared?,"Check this reference:
+https://discordapp.com/channels/1090613684163850280/1111545547426369637/1111563527753318430"
+I'm experiencing a flat line in the Line chart of the Finance View. How can I address this issue and ensure the chart displays the expected data correctly?,"Check this reference:
+https://discord.com/channels/1090613684163850280/1112243985784774687/1112244353126113302"
+"During the process of creating the line chart for forecast accuracy vs month in the Supply Chain View, I encountered an issue with the visual representation.
+The problem occurred at the 5:00-minute mark. I selected the year 2021, expecting the graph to display data only from September 2020 to August 2021.
+However, instead of the desired timeframe, the chart displayed data from all months between 2017 and 2022.
+
+How to solve and fix this issue?
+","Check this reference:
+https://discordapp.com/channels/1090613684163850280/1113690341929918505/1113750218618445824"
+"It appears that the X-axis of the chart is not starting with the month of September as expected. Instead, it is starting with a different month.
+How to solve this?","Check this reference:
+https://discordapp.com/channels/1090613684163850280/1112567189724213339/1112596364862423090"
+Why we use Net error in place of absolute net error,"Directional Insight: The net error metric offers valuable information regarding the direction of the error in forecasting, distinguishing between positive (overestimation) and negative (underestimation) values. This enables the identification of specific products that consistently outperform or underperform relative to the expected values. Additionally, net error provides insights into the risk factor, indicating if there are instances of stockouts or excessive inventory levels."
+"I am encountering an issue where the NIS IND column has the same value in all rows. As a result, I am unable to obtain the correct value for the benchmark variable.
+ How can I address this problem and obtain accurate benchmark values?","Have you taken the 'market' column from dim_market? Can you please check again. 
+
+Check this reference for further details: https://discordapp.com/channels/1090613684163850280/1107202294476443789/1107208944931311647"
+How do I update source in power query ?,"Follow the discord link : 
+
+ https://discord.com/channels/1090613684163850280/1114113976616353832/1114121330925768754"
+How do I enable Power Pivot before using it for the first time ?,"Follow the process in the link : 
+
+https://drive.google.com/file/d/1-mO-v52h-YTY1s-v30liBJPu6Yj4OUxb/view?usp=share_link"
